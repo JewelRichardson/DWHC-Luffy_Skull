@@ -1,0 +1,204 @@
+:root {
+  --hat-color: #f7b663;
+  --color-black: #000000;
+  ---color-white: #ffffff;
+  --body-color: #ccc;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--body-color);
+}
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hat {
+  overflow: hidden;
+  position: relative;
+  width: 190px;
+  height: 100px;
+  background-color: var(--hat-color);
+  border: solid 5px var(--color-black);
+  border-color: var(--color-black) transparent transparent transparent;
+  border-radius: 50%/100px 100px 0 0;
+}
+
+.hat-line {
+  position: absolute;
+  width: 217px;
+  height: 100px;
+  border: solid 5px var(--color-black);
+  border-color: var(--color-black) transparent transparent transparent;
+  border-radius: 150%/100px 100px 0 0;
+}
+
+.hat-line--top {
+  top: 79%;
+  left: -18px;
+}
+.hat-line--middle {
+  top: 70%;
+  left: -21px;
+  width: 222px;
+  border: solid 10px orangered;
+  border-color: orangered transparent transparent transparent;
+}
+.hat-line--bottom {
+  top: 67%;
+  left: -18px;
+  width: 222px;
+}
+.hat-cover {
+  width: 300px;
+  height: 173px;
+  border: 9px solid var(--color-black);
+  border-radius: 50%;
+  background-color: var(--hat-color);
+  transform: rotateX(60deg);
+  margin-top: -63px;
+}
+.head {
+  width: 196px;
+  height: 136px;
+  border-radius: 50% 50% 240px 240px;
+  border: 5px solid var(--color-black);
+  margin-top: -105px;
+  background-color: var(---color-white);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.eyes {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.eye {
+  width: 55px;
+  height: 53px;
+  background-color: var(--color-black);
+  border-radius: 50%;
+}
+.nose {
+  width: 25px;
+  height: 25px;
+  background-color: var(--color-black);
+  border-radius: 50%;
+}
+.mouth {
+  position: relative;
+  width: 100px;
+  height: 104px;
+  border: 5px solid var(--color-black);
+  border-radius: 50%;
+  margin-top: -38.5px;
+  background-color: var(---color-white);
+}
+.mouth-line {
+  position: absolute;
+  top: -34px;
+  left: -17px;
+  right: 0px;
+  width: 124px;
+  height: 100px;
+  transform: rotate(180deg);
+  border: solid 5px var(--color-black);
+  border-color: var(--color-black) transparent transparent transparent;
+  border-radius: 150%/100px 100px 0 0;
+}
+.teeth-divider {
+  position: absolute;
+  top: -53px;
+  left: -17px;
+  right: 0px;
+  width: 124px;
+  height: 100px;
+  transform: rotate(180deg);
+  border: solid 5px var(--color-black);
+  border-color: var(--color-black) transparent transparent transparent;
+  border-radius: 150%/100px 100px 0 0;
+}
+.teeth {
+  position: absolute;
+  top: 23px;
+  left: 7px;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+.tooth {
+  width: 5px;
+  height: 40px;
+  background-color: var(--color-black);
+}
+.tooth:nth-child(1) {
+  transform: rotate(9deg);
+  height: 31px;
+}
+.tooth:nth-child(2) {
+  transform: rotate(2deg);
+}
+.tooth:nth-child(3) {
+  transform: rotate(-8deg);
+}
+.tooth:nth-child(4) {
+  transform: rotate(-18deg);
+  height: 32px;
+}
+.bone {
+  position: absolute;
+  top: -88px;
+  width: 30px;
+  height: 440px;
+  border: 5px solid var(--color-black);
+  background-color: var(---color-white);
+}
+.bone-1 {
+  transform: rotate(45deg);
+}
+.bone-2 {
+  transform: rotate(-45deg);
+}
+.bone-ending {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 5px solid;
+  border-radius: 50%;
+  border-color: black black transparent var(--color-black);
+  background-color: var(---color-white);
+}
+.bone-ending-1 {
+  top: -20px;
+  left: -15px;
+  transform: rotate(-45deg);
+}
+.bone-ending-2 {
+  top: -20px;
+  right: -15px;
+  transform: rotate(45deg);
+}
+.bone-ending-3 {
+  bottom: -20px;
+  left: -15px;
+  transform: rotate(224deg);
+}
+.bone-ending-4 {
+  bottom: -20px;
+  right: -15px;
+  transform: rotate(-224deg);
+}
