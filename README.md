@@ -1,4 +1,4 @@
-# Monkey D. Luffy Skull Head
+# Drawing with HTML & CSS No.2 (Monkey D. Luffy's Skull Head) 
 
 This design is based on Monkey D. Luffy's Skull head from the One Piece anime.
 
