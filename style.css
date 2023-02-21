@@ -2,7 +2,8 @@
   --hat-color: #f7b663;
   --color-black: #000000;
   ---color-white: #ffffff;
-  --body-color: #ccc;
+  --color-orange: #ff4500;
+  --body-color: #cccccc;
 }
 *,
 *::before,
@@ -52,8 +53,8 @@ body {
   top: 70%;
   left: -21px;
   width: 222px;
-  border: solid 10px orangered;
-  border-color: orangered transparent transparent transparent;
+  border: solid 10px var(--color-orange);
+  border-color: var(--color-orange) transparent transparent transparent;
 }
 .hat-line--bottom {
   top: 67%;
