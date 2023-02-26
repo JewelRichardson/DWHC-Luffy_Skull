@@ -1,7 +1,4 @@
-/*
-- Designed by: Jewel Richardson
-- Link to my Github: https://github.com/JewelRichardson
-*/
+/* By Jewel Richardson | github.com/JewelRichardson */
 :root {
   --hat-color: #f7b663;
   --color-black: #000000;
@@ -22,6 +19,24 @@ body {
   justify-content: center;
   background-color: var(--body-color);
 }
+
+#link-section {
+  font-family: sans-serif;
+  font-size: 1rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+  padding: 15px 23px;
+  text-align: center;
+}
+#link-section .author {
+  color: rgb(0 0 0 / 60%);
+}
+#link-section .title {
+  font-weight: bold;
+}
+
 .container {
   position: relative;
   display: flex;
